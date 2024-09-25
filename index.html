@@ -2,8 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en-US" />
+    <meta name="copyright" content="© 2024 Jackson Dhanyel Santin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="author" content="Jackson Dhanyel Santin" />
+    <meta name="robots" content="index,follow">
+    <meta name="rating" content="general" />
+    <meta name="description" content="Gere QR Codes personalizados de forma rápida e fácil com nosso gerador de QR Codes online. Perfeito para compartilhar links, textos, e muito mais. Totalmente gratuito e sem complicações." />
+    <meta name="keywords" content="QR Code, gerador de QR Code, criar QR Code, QR Code online, QR Code personalizado, QR Code grátis, QR Code para links, QR Code para textos, QR Code fácil" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -23,15 +31,29 @@
           id="qrText"
         />
         <div class="column">
-          Background Color: <input type="color" id="qrBgColor" />
-          Color: <input type="color" id="qrColor" value="#FFFFFF" />
+          Background Color: <input type="color" id="qrBgColor" /> Color:
+          <input type="color" id="qrColor" value="#FFFFFF" />
         </div>
         <div id="imgBox">
           <img src="" alt="qr code" id="qrImage" />
         </div>
         <button class="btn" onclick="generateQrCode()">🚀 Create</button>
-        <button class="btn" id="shareWhatsApp" style="display:none;" onclick="shareWhatsApp()">Compartilhar no WhatsApp</button>
-        <button class="btn" id="copyLink" style="display:none;" onclick="copyLink()">Copiar Link</button>
+        <button
+          class="btn"
+          id="shareWhatsApp"
+          style="display: none"
+          onclick="shareWhatsApp()"
+        >
+          Compartilhar no WhatsApp
+        </button>
+        <button
+          class="btn"
+          id="copyLink"
+          style="display: none"
+          onclick="copyLink()"
+        >
+          Copiar Link
+        </button>
       </div>
     </div>
   </body>
